@@ -53,41 +53,27 @@ function BurgerManue() {
                   className=" cursor-pointer p-1   hover:text-[#ff2020] hover:duration-300"
                   onClick={() => setActive(false)}
                 >
-                  <Link href="/">home</Link>
+                  <Link href="/qiuz">Qiuz</Link>
                 </div>
                 <div
                   className=" cursor-pointer p-1    hover:text-[#ff2020] hover:duration-300"
                   onClick={() => setActive(false)}
                 >
-                  <Link href="/shop">shop</Link>
+                  <Link href="/companies">Companies</Link>
                 </div>
 
                 <div
                   className="hover:text-[#ff2020] hover:duration-300 cursor-pointer"
                   onClick={() => setActive(false)}
                 >
-                  about
-                </div>
-                <div className="flex flex-col gap-3 justify-center items-center">
-                  <p>latest</p>
-                </div>
-                <div className="flex flex-col gap-3 justify-center items-center">
-                  <p>blog</p>
-                </div>
-                <div className="flex flex-col gap-3 justify-center items-center">
-                  <div
-                    className="flex gap-2 cursor-pointer"
-                    onClick={() => setPagesdropDown((drop) => !drop)}
-                  >
-                    <p>pages</p>
-                  </div>
+                  <Link href="/blogs">Blogs</Link>
                 </div>
 
                 <div
                   className=" cursor-pointer p-1   [transition:all_ease_0.2s]  hover:duration-300"
                   onClick={() => setActive(false)}
                 >
-                  page
+                  <Link href="/about">About</Link>
                 </div>
                 <div
                   className=" cursor-pointer p-1   [transition:all_ease_0.2s] hover:text-[#ff2020] hover:duration-300"

@@ -1,11 +1,9 @@
-import { getBlogAction } from "../../../../../actions";
+// import { getBlogAction } from "../../../../../actions";
 import MainBlogDetails from "../../../components/blog/MainBlogDetails";
-import { getUsers } from "../../../../api/api";
+// import { getUsers } from "../../../../api/api";
 import { currUser } from "../../data";
 import { blogData } from "../../data";
 import { userData } from "../../data";
-
-import { BlogPageObject, GetSessionUser } from "@/typings";
 
 export const metadata = {
   title: { absolute: "Blog Details" },

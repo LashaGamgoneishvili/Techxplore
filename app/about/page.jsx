@@ -26,7 +26,10 @@ export default function About() {
   }
   return (
     <div>
-      <motion.section className="min-h-screen py-24" style={{ background }}>
+      <motion.section
+        className="min-h-screen pt-24 mb-12"
+        style={{ background }}
+      >
         <div className="container  text-white ">
           <h1 className="3xl font-bold">About Our Produc</h1>
           <div className="mt-4 flex gap-3">

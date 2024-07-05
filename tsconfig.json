@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/Header.jsx",
+    "components/mainpage/Landing.jsx",
+    "app/contact/page.jsx",
+    "app/contact/layout.jsx",
+    "app/profile/page.jsx",
+    "components/profile/AvatarUploadPage.jsx",
+    "components/profile/profileInfoWithEmail.jsx",
+    "components/profile/profileInfo.jsx",
+    "action.js",
+    "components/Footer.jsx",
+    "app/about/page.jsx",
+    "app/about/layout.jsx",
+    "components/mainpage/ExtraDetails.jsx",
+    "app/blogs/layout.jsx",
+    "app/blogs/page.jsx",
+    "components/blog/MainBogPage.jsx",
+    "components/blog/BlogList.jsx",
+    "app/blogs/[id]/page.jsx",
+    "components/blog/MainBlogDetails.jsx",
+    "components/blog/SearchForm.jsx"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { IoIosGlobe } from "react-icons/io";
 
 const QuizPage = () => {
-  const [firstQuiz, setFirstQuiz] = useState(1450);
+  const [firstQuiz, setFirstQuiz] = useState(5450);
   const [secondQuizTime, setSecondQuizTime] = useState(200);
 
   // const days = Math.floor(firstQuiz / (60 * 60 * 24));
@@ -64,9 +64,11 @@ const QuizPage = () => {
           <div className=" flex items-center justify-between w-full h-28 ">
             <div className="flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-3xl">
               {firstQuiz && firstQuiz > 0 ? (
-                <Link href="/quiz">
+                <Link href="/quiz" className="group">
                   Play
-                  <span className="ml-2 hover:translate-x-2">➔</span>
+                  <span className="ml-2 inline-block transform group-hover:translate-x-1 transition-transform duration-200">
+                    ➔
+                  </span>
                 </Link>
               ) : (
                 <p className=" text-[#ff2020]">Time is up</p>
@@ -149,10 +151,14 @@ const QuizPage = () => {
           <div className="flex items-center justify-between h-28">
             <div className="flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-3xl">
               {secondQuizTime && secondQuizTime > 0 ? (
-                <Link href="/quiz">
-                  Play
-                  <span className="ml-2">➔</span>
-                </Link>
+                <>
+                  <Link href="/quiz" className="group">
+                    Play
+                    <span className="ml-2 inline-block transform group-hover:translate-x-1 transition-transform duration-200">
+                      ➔
+                    </span>
+                  </Link>
+                </>
               ) : (
                 <p className=" text-[#ff2020]">Time is up</p>
               )}
@@ -236,7 +242,9 @@ const QuizPage = () => {
               <p className="text-gray-500">21 companies</p>
             </div>
           </div>
-          <span>➔</span>
+          <span className="hover:translate-x-1 cursor-pointer transition-transform duration-200">
+            ➔
+          </span>
         </div>
         <div className="flex items-center justify-between p-4 rounded-lg">
           <div className="flex items-center">
@@ -250,7 +258,9 @@ const QuizPage = () => {
               <p className="text-gray-500">21 companies</p>
             </div>
           </div>
-          <span>➔</span>
+          <span className="hover:translate-x-1 cursor-pointer transition-transform duration-200">
+            ➔
+          </span>
         </div>
         <div className="flex items-center justify-between p-4 rounded-lg">
           <div className="flex items-center">
@@ -264,7 +274,9 @@ const QuizPage = () => {
               <p className="text-gray-500">21 companies</p>
             </div>
           </div>
-          <span>➔</span>
+          <span className="hover:translate-x-1 cursor-pointer transition-transform duration-200">
+            ➔
+          </span>
         </div>
       </div>
     </div>

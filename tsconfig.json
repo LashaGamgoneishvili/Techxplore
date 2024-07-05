@@ -42,7 +42,9 @@
     "components/blog/BlogList.jsx",
     "app/blogs/[id]/page.jsx",
     "components/blog/MainBlogDetails.jsx",
-    "components/blog/SearchForm.jsx"
+    "components/blog/SearchForm.jsx",
+    "app/api/auth-login/login/route.jsx",
+    "app/api/auth-login/logout/route.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -2,9 +2,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import profileImage from "../../public/Assets/logo512.png";
+const profile =
+  "https://cdn.usegalileo.ai/stability/5b9c7820-c161-462e-b5e9-6f693c8e49fb.png";
 
 export default function UserProfile() {
-  const [profilePhoto, setProfilePhoto] = useState(profileImage);
+  const [profilePhoto, setProfilePhoto] = useState(profile);
 
   const handlePhotoUpload = (event) => {
     const file = event.target.files[0];
@@ -59,7 +61,7 @@ export default function UserProfile() {
         <div className="space-y-4">
           <div className="flex items-center">
             <Image
-              src={profileImage}
+              src={profilePhoto}
               alt="Company"
               width={24}
               height={24}
@@ -72,7 +74,7 @@ export default function UserProfile() {
           </div>
           <div className="flex items-center">
             <Image
-              src={profileImage}
+              src={profilePhoto}
               alt="Type"
               width={24}
               height={24}
@@ -85,7 +87,7 @@ export default function UserProfile() {
           </div>
           <div className="flex items-center">
             <Image
-              src={profileImage}
+              src={profilePhoto}
               alt="Industry"
               width={24}
               height={24}
@@ -98,7 +100,7 @@ export default function UserProfile() {
           </div>
           <div className="flex items-center">
             <Image
-              src={profileImage}
+              src={profilePhoto}
               alt="Location"
               width={24}
               height={24}
@@ -111,7 +113,7 @@ export default function UserProfile() {
           </div>
           <div className="flex items-center">
             <Image
-              src={profileImage}
+              src={profilePhoto}
               alt="Bio"
               width={24}
               height={24}
@@ -124,7 +126,7 @@ export default function UserProfile() {
           </div>
           <div className="flex items-center">
             <Image
-              src={profileImage}
+              src={profilePhoto}
               alt="Visibility"
               width={24}
               height={24}

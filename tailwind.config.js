@@ -139,10 +139,16 @@ module.exports = {
           "0%, 100%": { transform: "scale(1.93)" },
           "50%": { transform: "scale(2)" },
         },
+
+        underline: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        underline: "underline 0.3s ease-out forwards",
         appearHeader: "slideInY  1s ease-out ",
         fadeOut: "fadeOut 2s ease-out forwards",
         appear: "slideInX  0.5s ease-out ",

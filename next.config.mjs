@@ -17,6 +17,11 @@ const nextConfig = {
         hostname: "preview.colorlib.com",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.usegalileo.ai",
+        pathname: "**",
+      },
     ],
   },
 };

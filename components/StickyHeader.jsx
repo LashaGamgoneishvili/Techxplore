@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import BurgerManue from "../components/BurgerManue";
 import { useState } from "react";
 import { useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 const StickyHeader = () => {
   const [header, setHeader] = useState(false);
@@ -88,6 +87,12 @@ const StickyHeader = () => {
               >
                 Contact
               </Link>
+              <Link
+                className="text-[#111517] text-sm font-medium leading-normal hover:border-b duration-100"
+                href="/login"
+              >
+                Login
+              </Link>
             </div>
             <button className="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f3f4] text-[#111517] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
               <div
@@ -146,34 +151,40 @@ const StickyHeader = () => {
           <div className="hidden md:flex flex-1 justify-end gap-8 ">
             <div className="flex items-center gap-9">
               <Link
-                className="text-[#111517] text-sm font-medium leading-normal hover:border-b duration-100"
+                className="relative text-[#111517] text-sm font-medium leading-normal hover:text-[#111517] before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-[#111517] before:transition-all before:duration-300 before:ease-out hover:before:w-full"
                 href="/quiz"
               >
                 Qiuz
               </Link>
               <Link
-                className="text-[#111517] text-sm font-medium leading-normal hover:border-b duration-100"
+                className="relative text-[#111517] text-sm font-medium leading-normal hover:text-[#111517] before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-[#111517] before:transition-all before:duration-300 before:ease-out hover:before:w-full"
                 href="/companies"
               >
                 Companies
               </Link>
               <Link
-                className="text-[#111517] text-sm font-medium leading-normal hover:border-b duration-100"
+                className="relative text-[#111517] text-sm font-medium leading-normal hover:text-[#111517] before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-[#111517] before:transition-all before:duration-300 before:ease-out hover:before:w-full"
                 href="/blogs"
               >
                 Blogs
               </Link>
               <Link
-                className="text-[#111517] text-sm font-medium leading-normal hover:border-b duration-100"
+                className="relative text-[#111517] text-sm font-medium leading-normal hover:text-[#111517] before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-[#111517] before:transition-all before:duration-300 before:ease-out hover:before:w-full"
                 href="/about"
               >
                 About
               </Link>
               <Link
-                className="text-[#111517] text-sm font-medium leading-normal hover:border-b duration-100"
+                className="relative text-[#111517] text-sm font-medium leading-normal hover:text-[#111517] before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-[#111517] before:transition-all before:duration-300 before:ease-out hover:before:w-full"
                 href="/contact"
               >
                 Contact
+              </Link>
+              <Link
+                className="relative text-[#111517] text-sm font-medium leading-normal hover:text-[#111517] before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-[#111517] before:transition-all before:duration-300 before:ease-out hover:before:w-full"
+                href="/login"
+              >
+                Login
               </Link>
             </div>
             <button className="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f3f4] text-[#111517] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
